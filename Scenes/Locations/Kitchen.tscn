@@ -1,0 +1,12 @@
+[gd_scene load_steps=5 format=3 uid="uid://1188b28voenn"]
+
+[ext_resource type="PackedScene" uid="uid://ba43k6qftw4qf" path="res://Scenes/Locations/location_template.tscn" id="1_8cx31"]
+[ext_resource type="PackedScene" uid="uid://5fl1nnni3goq" path="res://Props/door.tscn" id="2_wpfju"]
+[ext_resource type="Resource" uid="uid://qo0p7g3htbvo" path="res://LocationDefinitions/CaptainCabin.tres" id="3_a27qc"]
+[ext_resource type="Resource" uid="uid://rrqy32w80l4u" path="res://RSE_TravelEvent.tres" id="4_wyirm"]
+
+[node name="Location" instance=ExtResource("1_8cx31")]
+
+[node name="Area2D" parent="CanvasLayer" index="1" instance=ExtResource("2_wpfju")]
+destination = ExtResource("3_a27qc")
+travel_event = ExtResource("4_wyirm")

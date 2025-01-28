@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://di2b7e48wu640"]
+
+[ext_resource type="PackedScene" uid="uid://ba43k6qftw4qf" path="res://Scenes/Locations/location_template.tscn" id="1_7eukr"]
+[ext_resource type="Texture2D" uid="uid://bbf4r2xt1fh8u" path="res://Textures/ship_hold.png" id="2_5iujc"]
+[ext_resource type="PackedScene" uid="uid://5fl1nnni3goq" path="res://Props/door.tscn" id="3_5au4i"]
+[ext_resource type="Resource" uid="uid://bymy7cj64o5a8" path="res://LocationDefinitions/Deck_2.tres" id="4_a2bgy"]
+[ext_resource type="Resource" uid="uid://rrqy32w80l4u" path="res://RSE_TravelEvent.tres" id="5_mmfun"]
+
+[node name="Location" instance=ExtResource("1_7eukr")]
+
+[node name="TextureRect" parent="CanvasLayer" index="0"]
+texture = ExtResource("2_5iujc")
+expand_mode = 3
+
+[node name="Door" parent="." index="1" instance=ExtResource("3_5au4i")]
+position = Vector2(1006, 439)
+destination = ExtResource("4_a2bgy")
+travel_event = ExtResource("5_mmfun")
+
+[node name="CollisionPolygon2D" parent="Door" index="0"]
+polygon = PackedVector2Array(-140, 83, 164, 147, 169, -453)
+
+[editable path="Door"]

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="LocationDefinition" load_steps=3 format=3 uid="uid://qo0p7g3htbvo"]
+
+[ext_resource type="PackedScene" uid="uid://7qefjbd653db" path="res://Scenes/Locations/CaptainCabin.tscn" id="1_k4s5t"]
+[ext_resource type="Script" path="res://Scripts/location_definition.gd" id="2_abmc3"]
+
+[resource]
+script = ExtResource("2_abmc3")
+location_name = "Captain's cabin"
+scene = ExtResource("1_k4s5t")

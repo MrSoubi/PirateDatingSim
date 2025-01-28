@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="LocationDefinition" load_steps=3 format=3 uid="uid://cvdmgqqnioit6"]
+
+[ext_resource type="PackedScene" uid="uid://di2b7e48wu640" path="res://Scenes/Locations/ShipHold.tscn" id="1_8q5x5"]
+[ext_resource type="Script" path="res://Scripts/location_definition.gd" id="1_lty8c"]
+
+[resource]
+script = ExtResource("1_lty8c")
+location_name = "Ship's hold"
+scene = ExtResource("1_8q5x5")

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://y1heec35pmhx"]
+
+[ext_resource type="Script" path="res://Scripts/game.gd" id="1_atynn"]
+[ext_resource type="Resource" uid="uid://rrqy32w80l4u" path="res://RSE_TravelEvent.tres" id="2_je5ei"]
+
+[node name="Game" type="Node"]
+script = ExtResource("1_atynn")
+travel_event = ExtResource("2_je5ei")
+
+[node name="LocationContainer" type="Node" parent="."]

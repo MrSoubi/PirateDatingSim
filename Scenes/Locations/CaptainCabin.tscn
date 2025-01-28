@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://7qefjbd653db"]
+
+[ext_resource type="PackedScene" uid="uid://ba43k6qftw4qf" path="res://Scenes/Locations/location_template.tscn" id="1_n2m2y"]
+[ext_resource type="Texture2D" uid="uid://b8sjh3bbb0qj" path="res://Textures/captain_cabin.png" id="2_f7x8a"]
+[ext_resource type="PackedScene" uid="uid://5fl1nnni3goq" path="res://Props/door.tscn" id="3_5kk6y"]
+[ext_resource type="Resource" uid="uid://bymy7cj64o5a8" path="res://LocationDefinitions/Deck_2.tres" id="4_hu8ra"]
+[ext_resource type="Resource" uid="uid://rrqy32w80l4u" path="res://RSE_TravelEvent.tres" id="5_voski"]
+
+[node name="Location" instance=ExtResource("1_n2m2y")]
+
+[node name="TextureRect" parent="CanvasLayer" index="0"]
+texture = ExtResource("2_f7x8a")
+
+[node name="Door" parent="CanvasLayer" index="1" instance=ExtResource("3_5kk6y")]
+position = Vector2(709, 253)
+scale = Vector2(1, 2.32)
+destination = ExtResource("4_hu8ra")
+travel_event = ExtResource("5_voski")
+
+[node name="CollisionPolygon2D" parent="CanvasLayer/Door" index="0"]
+polygon = PackedVector2Array(-58, -45.6896, 3, -56.4655, 51, -45.6896, 58, 65.5172, -65, 40.9483)
+
+[editable path="CanvasLayer/Door"]

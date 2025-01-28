@@ -1,0 +1,11 @@
+character_captain: Salut, je suis le boucher
+join character_captain center
+Mais j'aime pas la viande
+- Moi j'aime la viande
+	Ok, connard
+- Moi non plus
+	C'est bien garçon
+- Je mange des cailloux, la perydotite c'est banger
+	Monsieur bétonnière
+Bon, on fait quoi aujourd'hui ?
+set {rencontre_boucher} = true

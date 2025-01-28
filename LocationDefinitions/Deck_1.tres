@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="LocationDefinition" load_steps=3 format=3 uid="uid://bph4rh1w4s2h3"]
+
+[ext_resource type="Script" path="res://Scripts/location_definition.gd" id="1_0jff3"]
+[ext_resource type="PackedScene" uid="uid://cdtsixkyauyds" path="res://Scenes/Locations/Deck_1.tscn" id="1_rw3g5"]
+
+[resource]
+script = ExtResource("1_0jff3")
+location_name = "Deck_1"
+scene = ExtResource("1_rw3g5")

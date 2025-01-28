@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpcdkhmh7vnhj"]
+
+[ext_resource type="Script" path="res://character.gd" id="1_ag3qy"]
+[ext_resource type="Texture2D" uid="uid://bophrt80tivmp" path="res://Textures/cook.png" id="1_sdelq"]
+
+[node name="Character" type="Node2D"]
+script = ExtResource("1_ag3qy")
+dialog_timeline = "timeline_1"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_sdelq")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PackedVector2Array(-28, -333, 23, -331, 63, -269, 13, -217, 53, -136, 108, -266, 167, -187, 111, -70, 111, 44, 53, 96, 169, 281, 120, 330, 13, 326, -135, 323, -185, 203, -123, 76, -144, 13, -123, -41, -129, -67, -102, -103, -69, -130, -104, -223, -57, -264)
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

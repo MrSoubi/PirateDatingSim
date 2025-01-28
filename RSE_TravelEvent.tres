@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="TravelEvent" load_steps=2 format=3 uid="uid://rrqy32w80l4u"]
+
+[ext_resource type="Script" path="res://Scripts/travel_event.gd" id="1_515f1"]
+
+[resource]
+script = ExtResource("1_515f1")
